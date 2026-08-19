@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F1E8D5"/>
+      <stop offset="100%" stop-color="#E1D3B2"/>
+    </linearGradient>
+    <linearGradient id="ribbon1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8C878"/>
+      <stop offset="50%" stop-color="#D6A02C"/>
+      <stop offset="100%" stop-color="#B5852E"/>
+    </linearGradient>
+    <filter id="ribbonShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#4a2e10" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgC)"/>
+
+  <g filter="url(#ribbonShadow)" fill="none" stroke="url(#ribbon1)" stroke-width="26" stroke-linecap="round">
+    <path d="M 80 240 C 230 150 280 330 430 240 C 580 150 630 330 730 240"/>
+    <path d="M 80 340 C 230 250 280 430 430 340 C 580 250 630 430 730 340"/>
+    <path d="M 80 440 C 230 350 280 530 430 440 C 580 350 630 530 730 440"/>
+    <path d="M 80 540 C 230 450 280 630 430 540 C 580 450 630 630 730 540"/>
+  </g>
+
+  <!-- fine layer lines inside each ribbon for a laminated look -->
+  <g fill="none" stroke="#8A6224" stroke-width="2" opacity="0.35">
+    <path d="M 80 232 C 230 142 280 322 430 232 C 580 142 630 322 730 232"/>
+    <path d="M 80 248 C 230 158 280 338 430 248 C 580 158 630 338 730 248"/>
+    <path d="M 80 332 C 230 242 280 422 430 332 C 580 242 630 422 730 332"/>
+    <path d="M 80 348 C 230 258 280 438 430 348 C 580 258 630 438 730 348"/>
+    <path d="M 80 432 C 230 342 280 522 430 432 C 580 342 630 522 730 432"/>
+    <path d="M 80 448 C 230 358 280 538 430 448 C 580 358 630 538 730 448"/>
+    <path d="M 80 532 C 230 442 280 622 430 532 C 580 442 630 622 730 532"/>
+    <path d="M 80 548 C 230 458 280 638 430 548 C 580 458 630 638 730 548"/>
+  </g>
+
+  <!-- butter flecks + flour dust -->
+  <g fill="#5c3a10" opacity="0.15">
+    <circle cx="220" cy="300" r="6"/><circle cx="480" cy="360" r="5"/><circle cx="620" cy="300" r="6"/>
+    <circle cx="340" cy="440" r="5"/><circle cx="560" cy="470" r="6"/><circle cx="180" cy="470" r="4"/>
+  </g>
+  <g fill="#FCF8EE" opacity="0.7">
+    <circle cx="150" cy="220" r="3"/><circle cx="660" cy="230" r="2.5"/>
+    <circle cx="400" cy="600" r="3"/><circle cx="250" cy="600" r="2.5"/>
+  </g>
+
+  <!-- rolling pin resting along the top edge for context -->
+  <g filter="url(#ribbonShadow)">
+    <rect x="60" y="90" width="500" height="26" rx="13" fill="#C9A876"/>
+    <rect x="30" y="88" width="34" height="30" rx="12" fill="#8A6224"/>
+    <rect x="556" y="88" width="34" height="30" rx="12" fill="#8A6224"/>
+  </g>
+</svg>

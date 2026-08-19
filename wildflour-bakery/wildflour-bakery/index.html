@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildflour Bakery — Baked Fresh, Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">Wildflour</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">Our Story</a>
+      <a href="#menu" class="nav__link">Menu</a>
+      <a href="#gallery" class="nav__link">Gallery</a>
+      <a href="#visit" class="nav__link">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <p class="eyebrow">Corner of 5th &amp; Maple</p>
+      <h1 class="hero__title">Bread has a<br>morning voice.<br><em>We listen for it.</em></h1>
+      <p class="hero__sub">Slow-fermented sourdough, laminated pastry, and coffee — all made before sunrise, every single day.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">See the menu</a>
+        <a href="#visit" class="btn btn--ghost">Find us</a>
+      </div>
+    </div>
+    <div class="hero__stamp" aria-hidden="true">
+      <svg viewBox="0 0 160 160" class="stamp">
+        <circle cx="80" cy="80" r="74" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="80" cy="80" r="64" fill="none" stroke="currentColor" stroke-width="1"/>
+        <text class="stamp__text">
+          <textPath href="#stampPath">BAKED FRESH DAILY • EST. TODAY •</textPath>
+        </text>
+        <path id="stampPath" d="M 80,80 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" fill="none"/>
+        <text x="80" y="88" text-anchor="middle" class="stamp__center">5:00 AM</text>
+      </svg>
+    </div>
+  </section>
+
+  <div class="torn" aria-hidden="true"></div>
+
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__figure">
+        <img class="about__swatch" src="assets/about.svg" alt="Illustration of the oven and wheat stalks">
+      </div>
+      <div class="about__copy">
+        <p class="eyebrow">Our Story</p>
+        <h2>Three ovens, one starter, no shortcuts.</h2>
+        <p>Wildflour started as a single deck oven in a garage and a sourdough culture named Gerald, who is now older than most of our regulars' kids. Everything we bake still runs through his descendants.</p>
+        <p>We mill a portion of our own flour, proof everything overnight, and bake in small batches so nothing sits under a heat lamp waiting to be sold.</p>
+        <ul class="about__list">
+          <li>Flour milled in-house, twice weekly</li>
+          <li>24-hour cold ferment on every loaf</li>
+          <li>Butter-forward laminated pastry, folded by hand</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="section__head">
+      <p class="eyebrow">On the Counter</p>
+      <h2>Today's menu</h2>
+    </div>
+    <div class="menu__grid">
+
+      <article class="card">
+        <img class="card__img" src="assets/item-sourdough.svg" alt="Illustration of a scored sourdough boule">
+        <div class="card__top">
+          <h3>Country Sourdough</h3>
+          <span class="price">$9</span>
+        </div>
+        <p>Naturally leavened, 24-hour ferment, dark open crumb.</p>
+        <span class="tag">Whole loaf</span>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="assets/item-croissant.svg" alt="Illustration of a butter croissant">
+        <div class="card__top">
+          <h3>Morning Croissant</h3>
+          <span class="price">$5</span>
+        </div>
+        <p>Butter-laminated, 27 layers, baked to order in small trays.</p>
+        <span class="tag">Best before 10am</span>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="assets/item-rye.svg" alt="Illustration of a rye and caraway loaf">
+        <div class="card__top">
+          <h3>Rye &amp; Caraway</h3>
+          <span class="price">$8</span>
+        </div>
+        <p>Dense, malty, and built for a proper sandwich.</p>
+        <span class="tag">Whole loaf</span>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="assets/item-cookie.svg" alt="Illustration of a brown butter cookie">
+        <div class="card__top">
+          <h3>Brown Butter Cookie</h3>
+          <span class="price">$4</span>
+        </div>
+        <p>Toasted butter, flaky sea salt, chewy center.</p>
+        <span class="tag">Gluten-free option</span>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="assets/item-cardamom.svg" alt="Illustration of a cardamom bun">
+        <div class="card__top">
+          <h3>Cardamom Bun</h3>
+          <span class="price">$5</span>
+        </div>
+        <p>Swedish-style, hand-twisted, pearl sugar crust.</p>
+        <span class="tag">Weekends only</span>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="assets/item-coffee.svg" alt="Illustration of a filter coffee cup">
+        <div class="card__top">
+          <h3>House Filter Coffee</h3>
+          <span class="price">$4</span>
+        </div>
+        <p>Single origin, brewed fresh every 20 minutes.</p>
+        <span class="tag">Ask for today's bean</span>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="torn torn--flip" aria-hidden="true"></div>
+
+  <section class="gallery" id="gallery">
+    <div class="section__head">
+      <p class="eyebrow">A Look Inside</p>
+      <h2>From the ovens</h2>
+    </div>
+    <div class="gallery__row">
+      <div class="gallery__item gallery__item--tall">
+        <img src="assets/gallery-1.svg" alt="Illustration of proofing baskets">
+        <span>Proofing baskets, 5:15am</span>
+      </div>
+      <div class="gallery__item">
+        <img src="assets/gallery-2.svg" alt="Illustration of laminated dough">
+        <span>Lamination on the bench</span>
+      </div>
+      <div class="gallery__item">
+        <img src="assets/gallery-3.svg" alt="Illustration of a scored loaf">
+        <span>First bake, scored by hand</span>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="assets/gallery-4.svg" alt="Illustration of the bakery counter">
+        <span>The morning counter</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="visit__grid">
+      <div class="visit__info">
+        <p class="eyebrow">Visit</p>
+        <h2>Open early. Sold out early.</h2>
+        <dl class="hours">
+          <div><dt>Tue–Fri</dt><dd>6:30am – 2pm</dd></div>
+          <div><dt>Sat–Sun</dt><dd>7:00am – 1pm</dd></div>
+          <div><dt>Mon</dt><dd>Closed — baking for Tuesday</dd></div>
+        </dl>
+        <p class="visit__addr">118 Maple Street, Rawalpindi</p>
+      </div>
+      <form class="visit__form" id="contactForm">
+        <p class="eyebrow">Get the weekly bake list</p>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <button type="submit" class="btn btn--primary btn--block">Sign me up</button>
+        <p class="visit__note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Wildflour Bakery. Baked before you woke up.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

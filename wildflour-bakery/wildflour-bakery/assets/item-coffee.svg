@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F1E8D5"/><stop offset="100%" stop-color="#E1D3B2"/>
+    </linearGradient>
+    <filter id="s6" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#2b1a10" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg6)"/>
+  <g filter="url(#s6)">
+    <path d="M 140 130 L 155 220 Q 158 235 175 235 L 225 235 Q 242 235 245 220 L 260 130 Z"
+          fill="#FCF8EE" stroke="#34101F" stroke-width="4"/>
+    <path d="M 260 150 Q 300 150 300 180 Q 300 210 262 208" fill="none" stroke="#34101F" stroke-width="4"/>
+  </g>
+  <ellipse cx="200" cy="132" rx="60" ry="12" fill="#4a1e12"/>
+  <ellipse cx="185" cy="128" rx="18" ry="4" fill="#7a3a1e" opacity="0.7"/>
+  <ellipse cx="200" cy="238" rx="90" ry="12" fill="none" stroke="#34101F" stroke-width="3" opacity="0.6"/>
+  <g stroke="#A94A33" stroke-width="4" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M 175 110 C 165 90 190 80 180 60 C 170 40 195 30 185 15"/>
+    <path d="M 215 110 C 225 90 200 80 210 60 C 220 40 195 30 205 15"/>
+  </g>
+</svg>

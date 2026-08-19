@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="loafShade" cx="42%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#E8A93F"/>
+      <stop offset="45%" stop-color="#C06A3A"/>
+      <stop offset="80%" stop-color="#8a3a26"/>
+      <stop offset="100%" stop-color="#4a1e12"/>
+    </radialGradient>
+    <linearGradient id="bgD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34101F"/>
+      <stop offset="100%" stop-color="#160710"/>
+    </linearGradient>
+    <radialGradient id="rimLight" cx="30%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#FCE3A8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FCE3A8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="loafShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgD)"/>
+
+  <ellipse cx="400" cy="430" rx="300" ry="225" fill="url(#loafShade)" filter="url(#loafShadow)"/>
+  <ellipse cx="400" cy="430" rx="300" ry="225" fill="url(#rimLight)"/>
+
+  <!-- classic wheat-ear scoring -->
+  <g stroke="#2a1208" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M 250 310 Q 400 430 300 570"/>
+    <path d="M 550 310 Q 400 430 500 570"/>
+  </g>
+  <g stroke="#2a1208" stroke-width="5" opacity="0.75" stroke-linecap="round">
+    <line x1="280" y1="330" x2="322" y2="352"/>
+    <line x1="300" y1="368" x2="342" y2="390"/>
+    <line x1="318" y1="406" x2="360" y2="428"/>
+    <line x1="300" y1="444" x2="342" y2="466"/>
+    <line x1="280" y1="482" x2="322" y2="504"/>
+    <line x1="520" y1="330" x2="478" y2="352"/>
+    <line x1="500" y1="368" x2="458" y2="390"/>
+    <line x1="482" y1="406" x2="440" y2="428"/>
+    <line x1="500" y1="444" x2="458" y2="466"/>
+    <line x1="520" y1="482" x2="478" y2="504"/>
+  </g>
+
+  <!-- charred crust highlights along scores -->
+  <g stroke="#F2A65A" stroke-width="1.5" opacity="0.35" fill="none">
+    <path d="M 250 310 Q 400 430 300 570" transform="translate(-2,-2)"/>
+    <path d="M 550 310 Q 400 430 500 570" transform="translate(2,-2)"/>
+  </g>
+
+  <!-- flour dusting on crust -->
+  <g fill="#F7F1E6" opacity="0.6">
+    <circle cx="230" cy="380" r="4"/><circle cx="560" cy="350" r="3"/><circle cx="400" cy="250" r="4"/>
+    <circle cx="480" cy="530" r="3"/><circle cx="320" cy="550" r="3.5"/><circle cx="610" cy="470" r="3"/>
+    <circle cx="195" cy="480" r="3"/><circle cx="400" cy="600" r="3"/>
+  </g>
+</svg>
